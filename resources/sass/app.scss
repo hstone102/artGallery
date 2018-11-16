@@ -12,3 +12,11 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+body.pretty {
+    background-image: url('https://cdn.theatlantic.com/assets/media/img/mt/2018/08/iss050e066094_large/lead_720_405.jpg?mod=1535549776');
+    height: 100%;
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

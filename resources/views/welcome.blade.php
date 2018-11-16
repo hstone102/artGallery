@@ -14,8 +14,8 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-color: #808080;
+                color: #483d8b;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -44,9 +44,9 @@
                 font-size: 84px;
             }
             .links > a {
-                color: #636b6f;
+                color: #483d8b;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 20px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -58,7 +58,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -74,6 +74,17 @@
 
 
             @endif
+        </div>
+            <div class="row flex-center mt-5">
+              <div class="col-sm-2">
+                <img src="https://img.purch.com/w/660/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA0MS82MjAvb3JpZ2luYWwvbmVwdHVuZS12b3lhZ2VyLTIuanBn" alt="W3Schools.com" style="width:250px;height:250px;">
+              </div>
+            </div>
+            <div class="row flex-center full-height">
+            <h2>Collection of Space Images</h2>
+            </div>
+
+
 
 
 
@@ -111,7 +122,7 @@
             </div>
             @endauth
 
-          </div>
+
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
