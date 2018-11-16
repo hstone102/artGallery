@@ -12,9 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $posts = \App\input::orderBy('updated_at', 'desc')->get();
+    return view('welcome', compact('posts'));
 });
-
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
+Route::get('/edit', 'HomeController@index')->name('edit')->middleware('auth');
+Route::resource('posts', 'PostController')->middleware('auth');
