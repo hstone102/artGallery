@@ -13,10 +13,45 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-body.pretty {
-    background-image: url('https://cdn.theatlantic.com/assets/media/img/mt/2018/08/iss050e066094_large/lead_720_405.jpg?mod=1535549776');
-    height: 100%;
-    background-position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
+html, body {
+    background-color: #808080;
+    color: #483d8b;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+.full-height {
+    height: 100vh;
+}
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.position-ref {
+    position: relative;
+}
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+.content {
+    text-align: center;
+}
+.title {
+    font-size: 84px;
+}
+.links > a {
+    color: #483d8b;
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.m-b-md {
+    margin-bottom: 30px;
 }
