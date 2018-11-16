@@ -17,5 +17,4 @@ Route::get('/', function () {
 });
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
-Route::get('/edit', 'HomeController@index')->name('edit')->middleware('auth');
 Route::resource('posts', 'PostController')->middleware('auth');

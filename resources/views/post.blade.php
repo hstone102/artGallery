@@ -5,7 +5,7 @@
   <form method="post" action="{{ route('posts.store') }}">
     @csrf
     <div class="form-group row">
-      <label class="col-sm-2 col-form-label">Name</label>
+      <label class="col-sm-2 col-form-label">Artists' Name</label>
       <div class="col-sm-10">
         <input class="form-control" name="name" id="inputPassword" placeholder="Name">
       </div>

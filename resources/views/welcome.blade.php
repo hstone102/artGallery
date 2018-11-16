@@ -88,14 +88,20 @@
             @foreach ($posts as $post)
                 <div class="row">
                   <div class="col-sm">
-                    <p>Name: {{ $post->name }}</p>
-                    <p>Title: {{ $post->title }}</p>
-                    <p>Click <a href="posts/{{$post->id}}/edit">here to edit.</a>  </p>
+                    <p>Photographer Name: {{ $post->name }}</p>
+                    <p>Title of Picture: {{ $post->title }}</p>
+
+                  </div>
+                  <div class="col-sm">
+                    <p>Year Taken: {{ $post->year }}</p>
+                    <p>Description: {{ $post->description }}</p>
+
                   </div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-lg">
-                    <p>Post: <img src="{{ $post->post }}" alt="image" width="128" height="128"></p>
+                    <p>Image: <img src="{{ $post->post }}" alt="image" width="200" height="160"></p>
+                    <p>Click <a href="posts/{{$post->id}}/edit">here to edit.</a>  </p>
                   </div>
                 </div>
 

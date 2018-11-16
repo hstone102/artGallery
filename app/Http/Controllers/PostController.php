@@ -28,6 +28,8 @@ class PostController extends Controller
         $post->name = $request->input('name');
         $post->title = $request->input('title');
         $post->post = $request->input('post');
+        $post->year = $request->input('year');
+        $post->description = $request->input('description');
         Auth::user()->Posts()->save($post);
         $request->session()->flash('status', "{$post->title} has been posted!");
         return redirect()->route('home');
@@ -50,7 +52,7 @@ class PostController extends Controller
      */
     public function edit(\App\Input $post)
     {
-        return view('edit', compact('input'));
+        return view('edit', compact('post'));
     }
     /**
      * Update the specified resource in storage.

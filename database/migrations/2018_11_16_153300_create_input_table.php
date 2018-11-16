@@ -17,6 +17,8 @@ class CreateInputTable extends Migration
           $table->increments('id');
           $table->string('title');
           $table->text('post');
+          $table->text('description');
+          $table->string('year');
           $table->string('name');
           $table->unsignedInteger('user_id');
           $table->foreign('user_id')->references('id')->on('users');

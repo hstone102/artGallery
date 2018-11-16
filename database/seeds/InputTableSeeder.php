@@ -13,9 +13,12 @@ class InputTableSeeder extends Seeder
     {
       $first = new \App\Input;
       $first->user_id = '1';
-      $first->name = 'Holly';
+      $first->name = 'Space Man';
       $first->title = 'Beautiful Stars';
       $first->post = "http://earthempaths.net/wp/wp-content/uploads/2016/06/star.jpg";
+      $first->year = '2010';
+      $first->description = 'A beautiful picture of a star in the galaxy';
+
       $first->save();
         //
     }
