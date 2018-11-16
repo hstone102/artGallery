@@ -89,17 +89,13 @@
                 <div class="row">
                   <div class="col-sm">
                     <p>Name: {{ $post->name }}</p>
-                  </div>
-                  <div class="col-sm">
                     <p>Title: {{ $post->title }}</p>
-                  </div>
-                  <div class="col-sm">
                     <p>Click <a href="posts/{{$post->id}}/edit">here to edit.</a>  </p>
                   </div>
                 </div>
                 <div class="row border-bottom">
                   <div class="col-lg">
-                    <p>Post: {{ $post->post }}</p>
+                    <p>Post: <img src="{{ $post->post }}" alt="image" width="128" height="128"></p>
                   </div>
                 </div>
 

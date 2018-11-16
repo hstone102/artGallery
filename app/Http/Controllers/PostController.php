@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
-//use App\Post;
+//use App\Input;
 use Illuminate\Http\Request;
 class PostController extends Controller
 {
@@ -24,42 +24,42 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $post = new \App\post;
+        $post = new \App\Input;
         $post->name = $request->input('name');
         $post->title = $request->input('title');
         $post->post = $request->input('post');
-        Auth::user()->posts()->save($post);
+        Auth::user()->Posts()->save($post);
         $request->session()->flash('status', "{$post->title} has been posted!");
         return redirect()->route('home');
     }
     /**
      * Display the specified resource.
      *
-     * @param  int  \App\Post  $post
+     * @param  int  \App\Input  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(\App\post $post)
+    public function show(\App\Input $post)
     {
-      return view('posts.show', compact('post'));
+      return view('inputs.show', compact('input'));
     }
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  \App\Post  $post
+     * @param  int  \App\Input  $post
      * @return \Illuminate\Http\Response
      */
-    public function edit(\App\post $post)
+    public function edit(\App\Input $post)
     {
-        return view('edit', compact('post'));
+        return view('edit', compact('input'));
     }
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Post  $post
+     * @param  \App\Input  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, \App\post $post)
+    public function update(Request $request, \App\Input $post)
     {
         //$post = \App\post::find($id);
         $post->name = $request->input('name');
@@ -71,10 +71,10 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Post  $post
+     * @param  \App\Input  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy(\App\post $post)
+    public function destroy(\App\Input $post)
     {
     }
 }

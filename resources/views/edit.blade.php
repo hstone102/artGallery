@@ -22,7 +22,7 @@
               <p>Go to posts <a href="\">Here</a></p>
             <div>
 
-                <form form class="" method="post" action="/posts/{{ $post->id }}">
+                <form form class="" method="post" action="/Inputs/{{ $post->id }}">
                   @method('PUT')
                   @csrf
                   <div class="form-group row">

@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    $posts = \App\input::orderBy('updated_at', 'desc')->get();
+    $posts = \App\Input::orderBy('updated_at', 'desc')->get();
     return view('welcome', compact('posts'));
 });
 Auth::routes();

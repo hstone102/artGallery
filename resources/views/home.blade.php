@@ -36,8 +36,8 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="post">Post:</label>
-                    <textarea class="form-control"  name="post" rows="5" id="post"></textarea>
+                    <label for="post">Post the URL of the space image:</label>
+                    <textarea class="form-control"  name="post" rows="1" id="post"></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
