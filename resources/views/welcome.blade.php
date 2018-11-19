@@ -76,7 +76,7 @@
             @endif
         </div>
 
-        <!-- @guest -->
+
             <div class="row flex-center mt-5">
               <div class="col-sm-2">
                 <img src="https://img.purch.com/w/660/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA0MS82MjAvb3JpZ2luYWwvbmVwdHVuZS12b3lhZ2VyLTIuanBn" alt="W3Schools.com" style="width:250px;height:250px;">
@@ -85,13 +85,13 @@
             <div class="row flex-center full-height">
             <h2>Collection of Space Images</h2>
             </div>
-        <!-- @endguest -->
 
 
 
 
 
-            <!-- @auth -->
+
+
             <div class="container">
               <div class="row">
                 <div class="col-sm">
@@ -124,7 +124,7 @@
             @endforeach
 
             </div>
-            <!-- @endauth -->
+          
 
 
 
